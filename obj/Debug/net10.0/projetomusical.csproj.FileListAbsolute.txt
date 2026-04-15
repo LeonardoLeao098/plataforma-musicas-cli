@@ -1,0 +1,14 @@
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\bin\Debug\net10.0\projetomusical.exe
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\bin\Debug\net10.0\projetomusical.deps.json
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\bin\Debug\net10.0\projetomusical.runtimeconfig.json
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\bin\Debug\net10.0\projetomusical.dll
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\bin\Debug\net10.0\projetomusical.pdb
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.AssemblyInfoInputs.cache
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.AssemblyInfo.cs
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.csproj.CoreCompileInputs.cache
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.dll
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\refint\projetomusical.dll
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.pdb
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.genruntimeconfig.cache
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\ref\projetomusical.dll
