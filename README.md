@@ -1,4 +1,4 @@
-## Screen Sound
+# Screen Sound
 
 Um projeto de console desenvolvido em C# para praticar lógica de programação, estruturas de repetição, listas e organização de métodos.
 
@@ -6,7 +6,7 @@ O sistema permite cadastrar e listar bandas em um menu interativo no terminal.
 
 ========================================================
 
-# Funcionalidades
+## Funcionalidades
 
 Menu interativo no console
 Cadastro de bandas
@@ -18,7 +18,7 @@ Exibição de média por banda (em desenvolvimento)
 
 ========================================================
 
-# Tecnologias utilizadas
+## Tecnologias utilizadas
 
 C#
 .NET
@@ -29,7 +29,7 @@ Métodos
 
 ========================================================
 
-# Conceitos praticados
+## Conceitos praticados
 
 Estrutura básica de programas em C#
 Métodos e reutilização de código
