@@ -8,34 +8,34 @@ O sistema permite cadastrar e listar bandas em um menu interativo no terminal.
 
 ## Funcionalidades
 
-Menu interativo no console
-Cadastro de bandas
-Listagem de bandas cadastradas
-Validação de entrada do usuário
-Tratamento para lista vazia
-Avaliação de bandas (em desenvolvimento)
-Exibição de média por banda (em desenvolvimento)
+- Menu interativo no console
+- Cadastro de bandas
+- Listagem de bandas cadastradas
+- alidação de entrada do usuário
+- Tratamento para lista vazia
+- Avaliação de bandas (em desenvolvimento)
+- Exibição de média por banda (em desenvolvimento)
 
 
 
 ## Tecnologias utilizadas
 
-C#
-.NET
-Console Application
-List
-Switch Case
-Métodos
+- C#
+- .NET
+- Console Application
+- List
+- Switch Case
+- Métodos
 
 
 
 ## Conceitos praticados
 
-Estrutura básica de programas em C#
-Métodos e reutilização de código
-List<string>
-for
-if / else
-switch case
-int.TryParse()
-Organização de fluxo de menu
+- Estrutura básica de programas em C#
+- Métodos e reutilização de código
+- List<string>
+- for
+- if / else
+- switch case
+- int.TryParse()
+- Organização de fluxo de menu
