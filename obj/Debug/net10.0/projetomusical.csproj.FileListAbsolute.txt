@@ -12,3 +12,4 @@ C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\refin
 C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.pdb
 C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.genruntimeconfig.cache
 C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\ref\projetomusical.dll
+C:\Users\leoba\OneDrive\Área de Trabalho\projetomusical\obj\Debug\net10.0\projetomusical.sourcelink.json
