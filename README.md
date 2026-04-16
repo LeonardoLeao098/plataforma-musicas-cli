@@ -4,7 +4,7 @@ Um projeto de console desenvolvido em C# para praticar lógica de programação,
 
 O sistema permite cadastrar e listar bandas em um menu interativo no terminal.
 
-========================================================
+
 
 ## Funcionalidades
 
@@ -16,7 +16,7 @@ Tratamento para lista vazia
 Avaliação de bandas (em desenvolvimento)
 Exibição de média por banda (em desenvolvimento)
 
-========================================================
+
 
 ## Tecnologias utilizadas
 
@@ -27,7 +27,7 @@ List
 Switch Case
 Métodos
 
-========================================================
+
 
 ## Conceitos praticados
 
