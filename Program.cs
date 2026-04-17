@@ -1,13 +1,10 @@
 ﻿// Screen Sound
 
-List<string> bandas = new List<string>();
+Dictionary<string, List<double>> bandas = new Dictionary<string, List<double>>();
 
 void Menu ()
 {
-    Console.WriteLine("\n============================");
-    Console.WriteLine("Boas vindas ao Screen Sound!");
-    Console.WriteLine("============================");
-
+    ExibirTitulo("Boas vindas ao Screem Sound!");
     Console.WriteLine("\n[1] para registrar uma banda: ");
     Console.WriteLine("[2] para listas as bandas: ");
     Console.WriteLine("[3] para avaliar uma banda: ");
@@ -41,13 +38,22 @@ void Menu ()
     }
 }
 
+void ExibirTitulo(string titulo)
+{
+    int letrasQuantidade = titulo.Length;
+    string igualdades = string.Empty.PadLeft(letrasQuantidade, '=');
+    Console.WriteLine(igualdades);
+    Console.WriteLine(titulo);
+    Console.WriteLine(igualdades + "\n");
+}
+
 void RegistrarBanda()
 {
     Console.Clear();
-    Console.WriteLine ("Você quer registrar uma banda, vamos lá!");
+    ExibirTitulo("Registrar nova banda, manda a ver!");
     Console.WriteLine("\nDigite o nome da banda: ");
     string bandaNome = Console.ReadLine()!;
-    bandas.Add(bandaNome);
+    bandas.Add(bandaNome, new List<double>());
     Console.WriteLine($"A banda {bandaNome} foi registrada com sucesso!");
     Thread.Sleep(1000);
     Console.Clear();
@@ -66,11 +72,11 @@ void MostrarBandas()
     }
     else
     {
-        Console.Clear();
-    Console.WriteLine("Essas são as bandas que temos no momento: \n");
-    for (int i = 0; i < bandas.Count; i++)
+    Console.Clear();
+    ExibirTitulo("Essas são as bandas que temos no momento!");
+    foreach (string banda in bandas.Keys)
     {
-        Console.WriteLine($"{bandas[i]}");
+        Console.WriteLine($"{banda}");
     }
 
     Console.WriteLine("\nAperte qualquer tecla para retornar ao menu!");
