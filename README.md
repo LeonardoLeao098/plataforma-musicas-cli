@@ -12,7 +12,7 @@ O sistema permite cadastrar e listar bandas em um menu interativo no terminal.
 - alidação de entrada do usuário
 - Tratamento para lista vazia
 - Avaliação de bandas
-- Exibição de média por banda (em desenvolvimento)
+- Exibição de média por banda
 
 ## Tecnologias utilizadas
 
