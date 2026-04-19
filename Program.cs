@@ -1,4 +1,5 @@
 ﻿// Screen Sound
+using System.Linq;
 
 Dictionary<string, List<double>> bandas = new Dictionary<string, List<double>>();
 
@@ -25,7 +26,7 @@ void Menu ()
                 break;
             case 3: AvaliarBanda();
                 break;
-            case 4: Console.WriteLine ("Você quer exibir a média de uma banda, se liga aí!");
+            case 4: ExibirMedia();
                 break;
             case 5: Console.WriteLine ("Você quer sair do programa, até a próxima!");
                 break;
@@ -79,7 +80,7 @@ void MostrarBandas()
         Console.WriteLine($"{banda}");
     }
 
-    Console.WriteLine("\nPressione qualquer tecla para retornar ao menu principal.");
+    Console.WriteLine("\nPressione qualquer tecla para voltar ao menu principal.");
     Console.ReadKey();
     Menu();
     }
@@ -109,12 +110,47 @@ void AvaliarBanda()
     else  // caso não exista, retorna ao menu
     {
         Console.WriteLine($"A banda {nomeDaBanda} não foi encontrada!");
-        Console.WriteLine("Pressione qualquer tecla para retornar ao menu principal.");
+        Console.WriteLine("Pressione qualquer tecla para voltar ao menu principal.");
         Console.ReadKey();
         Menu();
     }
 
     
+}
+
+void ExibirMedia()
+{
+    // identifica banda a ser avaliada
+
+    Console.Clear();
+    ExibirTitulo("Visualização das médias!");
+    Console.Write("Digite a banda que você quer ver a média: ");
+    string nomeDaBanda = Console.ReadLine()!;
+
+    // verifica se a banda existe > procura as notas
+
+    if (bandas.ContainsKey(nomeDaBanda))
+    {
+        List<double> notas = bandas[nomeDaBanda];
+
+        if (notas.Count > 0)
+        {
+            double media = notas.Average();
+            Console.WriteLine($"A média da banda {nomeDaBanda} é {media}");
+        }
+        else
+        {
+            Console.WriteLine($"A banda {nomeDaBanda} ainda não tem avaliações!");
+        }
+
+    }
+    else // caso não exista, retorna ao menu
+    {
+        Console.WriteLine($"A banda {nomeDaBanda} não foi encontrada!");
+    }
+    Console.WriteLine("Pressione qualquer tecla para voltar ao menu principal.");
+    Console.ReadKey();
+    Menu();
 }
 
 Menu();
