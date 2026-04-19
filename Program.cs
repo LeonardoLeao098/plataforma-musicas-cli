@@ -4,6 +4,7 @@ Dictionary<string, List<double>> bandas = new Dictionary<string, List<double>>()
 
 void Menu ()
 {
+    Console.Clear();
     ExibirTitulo("Boas vindas ao Screem Sound!");
     Console.WriteLine("\n[1] para registrar uma banda: ");
     Console.WriteLine("[2] para listas as bandas: ");
@@ -22,7 +23,7 @@ void Menu ()
                 break;
             case 2: MostrarBandas();
                 break;
-            case 3: Console.WriteLine ("Você quer avaliar uma banda, manda a ver!");
+            case 3: AvaliarBanda();
                 break;
             case 4: Console.WriteLine ("Você quer exibir a média de uma banda, se liga aí!");
                 break;
@@ -67,7 +68,6 @@ void MostrarBandas()
         Console.Clear();
         Console.WriteLine("Não temos bandas registradas no momento!");
         Thread.Sleep(4000);
-        Console.Clear();
         Menu();
     }
     else
@@ -79,11 +79,42 @@ void MostrarBandas()
         Console.WriteLine($"{banda}");
     }
 
-    Console.WriteLine("\nAperte qualquer tecla para retornar ao menu!");
+    Console.WriteLine("\nPressione qualquer tecla para retornar ao menu principal.");
     Console.ReadKey();
-    Console.Clear();
     Menu();
     }
+}
+
+void AvaliarBanda()
+{
+    // identifica banda a ser avaliada
+
+    Console.Clear();
+    ExibirTitulo("Avaliação de banda!");
+    Console.Write("Boa! Digite a banda que você quer avaliar: ");
+    string nomeDaBanda = Console.ReadLine()!;
+
+    // verifica se a banda existe > atribuir nota
+
+    if (bandas.ContainsKey(nomeDaBanda))
+    {
+        Console.Write("Banda encontrada! Digite a nota que deseja dar: ");
+        double nota = double.Parse(Console.ReadLine()!);
+        bandas[nomeDaBanda].Add(nota);
+        Console.WriteLine($"Nota adicionada com sucesso para a banda {nomeDaBanda}!");
+        Thread.Sleep(3000);
+        Console.Clear();
+        Menu();
+    } 
+    else  // caso não exista, retorna ao menu
+    {
+        Console.WriteLine($"A banda {nomeDaBanda} não foi encontrada!");
+        Console.WriteLine("Pressione qualquer tecla para retornar ao menu principal.");
+        Console.ReadKey();
+        Menu();
+    }
+
+    
 }
 
 Menu();
