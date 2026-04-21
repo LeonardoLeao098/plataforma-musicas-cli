@@ -1,5 +1,6 @@
 ﻿// Screen Sound
 using System.Linq;
+using System.Reflection.Metadata;
 
 Dictionary<string, List<double>> bandas = new Dictionary<string, List<double>>();
 
@@ -62,9 +63,15 @@ void RegistrarBanda()
     Console.WriteLine("\nDigite o nome da banda: ");
     string bandaNome = Console.ReadLine()!;
 
-    bandas.Add(bandaNome, new List<double>());
-
-    Console.WriteLine($"A banda {bandaNome} foi registrada com sucesso!");
+    if(!bandas.ContainsKey(bandaNome))
+    {
+        bandas.Add(bandaNome, new List<double>());
+        Console.WriteLine($"A banda {bandaNome} foi registrada com sucesso!");
+    }
+    else
+    {
+        Console.WriteLine("Essa banda já foi registrada!");
+    }
     Thread.Sleep(2000);
 }
 
@@ -102,8 +109,22 @@ void AvaliarBanda()
 
     if (bandas.ContainsKey(nomeDaBanda))
     {
-        Console.Write("Banda encontrada! Digite a nota que deseja dar: ");
-        double nota = double.Parse(Console.ReadLine()!);
+        double nota;
+        bool valido = false;
+
+        do
+        {
+            Console.Write("Banda encontrada! Digite a nota que deseja dar: ");
+            string entrada = Console.ReadLine()!;
+            valido = double.TryParse(entrada, out nota);
+
+            if(!valido)
+            {
+                Console.WriteLine("Valor inválido, tente novamente.");
+            }
+            
+        } while(!valido);
+
         bandas[nomeDaBanda].Add(nota);
         Console.WriteLine($"Nota adicionada com sucesso para a banda {nomeDaBanda}!");
         Thread.Sleep(3000);
