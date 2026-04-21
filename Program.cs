@@ -41,7 +41,6 @@ void Menu ()
         {
             Console.WriteLine("Digite apenas números!");
         }
-        Thread.Sleep(2000);
     }
     while (escolha != 5);
 }
@@ -59,13 +58,14 @@ void RegistrarBanda()
 {
     Console.Clear();
     ExibirTitulo("Registrar nova banda, manda a ver!");
+
     Console.WriteLine("\nDigite o nome da banda: ");
     string bandaNome = Console.ReadLine()!;
+
     bandas.Add(bandaNome, new List<double>());
+
     Console.WriteLine($"A banda {bandaNome} foi registrada com sucesso!");
     Thread.Sleep(2000);
-    Console.Clear();
-    Menu();
 }
 
 void MostrarBandas()
@@ -74,8 +74,6 @@ void MostrarBandas()
     {
         Console.Clear();
         Console.WriteLine("Não temos bandas registradas no momento!");
-        Thread.Sleep(3000);
-        Menu();
     }
     else
     {
@@ -88,7 +86,6 @@ void MostrarBandas()
 
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu principal.");
     Console.ReadKey();
-    Menu();
     }
 }
 
@@ -110,15 +107,12 @@ void AvaliarBanda()
         bandas[nomeDaBanda].Add(nota);
         Console.WriteLine($"Nota adicionada com sucesso para a banda {nomeDaBanda}!");
         Thread.Sleep(3000);
-        Console.Clear();
-        Menu();
     } 
     else  // caso não exista, retorna ao menu
     {
         Console.WriteLine($"A banda {nomeDaBanda} não foi encontrada!");
         Console.WriteLine("Pressione qualquer tecla para voltar ao menu principal.");
         Console.ReadKey();
-        Menu();
     }
 
     
@@ -156,7 +150,6 @@ void ExibirMedia()
     }
     Console.WriteLine("Pressione qualquer tecla para voltar ao menu principal.");
     Console.ReadKey();
-    Menu();
 }
 
 Menu();
