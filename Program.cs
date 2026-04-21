@@ -5,39 +5,45 @@ Dictionary<string, List<double>> bandas = new Dictionary<string, List<double>>()
 
 void Menu ()
 {
-    Console.Clear();
-    ExibirTitulo("Boas vindas ao Screem Sound!");
-    Console.WriteLine("\n[1] para registrar uma banda: ");
-    Console.WriteLine("[2] para listas as bandas: ");
-    Console.WriteLine("[3] para avaliar uma banda: ");
-    Console.WriteLine("[4] para exibir a média de uma banda: ");
-    Console.WriteLine("[5] para sair: ");
-
-    Console.Write("Opção: ");
-    string opcao = Console.ReadLine()!;
-
-    if (int.TryParse(opcao, out int escolha))
+    int escolha = 0;
+    do
     {
-        switch (escolha)
+        Console.Clear();
+        ExibirTitulo("Boas vindas ao Screem Sound!");
+        Console.WriteLine("\n[1] para registrar uma banda: ");
+        Console.WriteLine("[2] para listas as bandas: ");
+        Console.WriteLine("[3] para avaliar uma banda: ");
+        Console.WriteLine("[4] para exibir a média de uma banda: ");
+        Console.WriteLine("[5] para sair: ");
+
+        Console.Write("Opção: ");
+        string opcao = Console.ReadLine()!;
+
+        if (int.TryParse(opcao, out escolha))
         {
-            case 1: RegistrarBanda();
-                break;
-            case 2: MostrarBandas();
-                break;
-            case 3: AvaliarBanda();
-                break;
-            case 4: ExibirMedia();
-                break;
-            case 5: Console.WriteLine ("Você quer sair do programa, até a próxima!");
-                break;
-            default: Console.WriteLine("Opção inválida!");
-                break;
+            switch (escolha)
+            {
+                case 1: RegistrarBanda();
+                    break;
+                case 2: MostrarBandas();
+                    break;
+                case 3: AvaliarBanda();
+                    break;
+                case 4: ExibirMedia();
+                    break;
+                case 5: Console.WriteLine ("Você quer sair do programa, até a próxima!");
+                    break;
+                default: Console.WriteLine("Opção inválida, tente de novo!");
+                    break;
+            }
         }
+        else
+        {
+            Console.WriteLine("Digite apenas números!");
+        }
+        Thread.Sleep(2000);
     }
-    else
-    {
-        Console.WriteLine("Digite apenas números!");
-    }
+    while (escolha != 5);
 }
 
 void ExibirTitulo(string titulo)
@@ -57,7 +63,7 @@ void RegistrarBanda()
     string bandaNome = Console.ReadLine()!;
     bandas.Add(bandaNome, new List<double>());
     Console.WriteLine($"A banda {bandaNome} foi registrada com sucesso!");
-    Thread.Sleep(1000);
+    Thread.Sleep(2000);
     Console.Clear();
     Menu();
 }
@@ -68,7 +74,7 @@ void MostrarBandas()
     {
         Console.Clear();
         Console.WriteLine("Não temos bandas registradas no momento!");
-        Thread.Sleep(4000);
+        Thread.Sleep(3000);
         Menu();
     }
     else
