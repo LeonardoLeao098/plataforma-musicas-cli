@@ -1,4 +1,4 @@
-﻿// Screen Sound
+﻿// Sound Force
 using System.Linq;
 using System.Reflection.Metadata;
 
