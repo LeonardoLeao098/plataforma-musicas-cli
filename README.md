@@ -9,7 +9,7 @@ O sistema permite cadastrar e listar bandas em um menu interativo no terminal.
 - Menu interativo no console
 - Cadastro de bandas
 - Listagem de bandas cadastradas
-- alidação de entrada do usuário
+- Validação de entrada do usuário
 - Tratamento para lista vazia
 - Avaliação de bandas
 - Exibição de média por banda
