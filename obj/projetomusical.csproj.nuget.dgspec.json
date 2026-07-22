@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj": {}
+    "C:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj": {}
   },
   "projects": {
-    "c:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj": {
+    "C:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj",
+        "projectUniqueName": "C:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj",
         "projectName": "projetomusical",
-        "projectPath": "c:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj",
+        "projectPath": "C:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\projetomusical.csproj",
         "packagesPath": "C:\\Users\\leoba\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\obj\\",
+        "outputPath": "C:\\Users\\leoba\\OneDrive\\Área de Trabalho\\Estudos\\C#\\plataforma-musicas-cli\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leoba\\AppData\\Roaming\\NuGet\\NuGet.Config"
