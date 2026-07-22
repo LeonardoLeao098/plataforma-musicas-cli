@@ -1,4 +1,4 @@
-# Screen Sound
+# Sound Force - ainda em desenvolvimento
 
 Um projeto de console desenvolvido em C# para praticar lógica de programação, estruturas de repetição, listas e organização de métodos.
 
